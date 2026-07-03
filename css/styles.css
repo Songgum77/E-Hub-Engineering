@@ -510,13 +510,13 @@ h3 {
 .strength-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .service-card,
 .process-step,
 .strength-card {
-  padding: 1.35rem;
+  padding: 1.45rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
@@ -531,16 +531,34 @@ h3 {
 .service-card-wide {
   grid-column: span 3;
   display: grid;
-  grid-template-columns: auto minmax(180px, 0.8fr) minmax(280px, 1.6fr);
-  gap: 1rem;
+  grid-template-columns: auto minmax(180px, 0.82fr) minmax(300px, 1.55fr);
+  gap: 1rem 1.4rem;
   align-items: start;
   background: linear-gradient(135deg, var(--navy), var(--navy-2));
   color: rgba(255, 255, 255, 0.78);
   border: 0;
 }
 
+.service-card-wide .icon {
+  grid-row: 1 / span 2;
+  margin-bottom: 0;
+}
+
 .service-card-wide h3 {
+  grid-column: 2;
+  margin-bottom: 0;
   color: #fff;
+}
+
+.service-card-wide p {
+  grid-column: 2;
+  margin-bottom: 0;
+}
+
+.service-card-wide .check-list {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  align-self: center;
 }
 
 .icon {
@@ -794,6 +812,14 @@ textarea::placeholder {
   .service-card-wide {
     grid-column: span 2;
     grid-template-columns: 1fr;
+  }
+
+  .service-card-wide .icon,
+  .service-card-wide h3,
+  .service-card-wide p,
+  .service-card-wide .check-list {
+    grid-column: auto;
+    grid-row: auto;
   }
 
   .process-grid {
