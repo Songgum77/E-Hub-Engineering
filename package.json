@@ -1,0 +1,13 @@
+{
+  "name": "e-hub-engineering",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website for E-HUB Engineering Consultancy.",
+  "scripts": {
+    "start": "wrangler pages dev .",
+    "deploy": "wrangler pages deploy . --project-name e-hub-engineering"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
