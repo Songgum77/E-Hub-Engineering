@@ -528,39 +528,6 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-.service-card-wide {
-  grid-column: span 3;
-  display: grid;
-  grid-template-columns: auto minmax(180px, 0.82fr) minmax(300px, 1.55fr);
-  gap: 1rem 1.4rem;
-  align-items: start;
-  background: linear-gradient(135deg, var(--navy), var(--navy-2));
-  color: rgba(255, 255, 255, 0.78);
-  border: 0;
-}
-
-.service-card-wide .icon {
-  grid-row: 1 / span 2;
-  margin-bottom: 0;
-}
-
-.service-card-wide h3 {
-  grid-column: 2;
-  margin-bottom: 0;
-  color: #fff;
-}
-
-.service-card-wide p {
-  grid-column: 2;
-  margin-bottom: 0;
-}
-
-.service-card-wide .check-list {
-  grid-column: 3;
-  grid-row: 1 / span 2;
-  align-self: center;
-}
-
 .icon {
   width: 48px;
   height: 48px;
@@ -809,19 +776,6 @@ textarea::placeholder {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .service-card-wide {
-    grid-column: span 2;
-    grid-template-columns: 1fr;
-  }
-
-  .service-card-wide .icon,
-  .service-card-wide h3,
-  .service-card-wide p,
-  .service-card-wide .check-list {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
   .process-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -886,10 +840,6 @@ textarea::placeholder {
   .form-row,
   .check-list {
     grid-template-columns: 1fr;
-  }
-
-  .service-card-wide {
-    grid-column: span 1;
   }
 
   .hero-panel {
